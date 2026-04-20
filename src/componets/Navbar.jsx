@@ -19,12 +19,15 @@ const Navbar = () => {
   return (
     <nav className="navbar sticky top-0 bg-base-100 shadow-lg px-6 z-10">
       <div className="flex-1">
-        <a className="gap-0 text-secondary font-bold normal-case text-2xl">
+        <NavLink
+          to="/"
+          className="gap-0 text-secondary font-bold normal-case text-2xl"
+        >
           Byte<span className="text-primary">Blaze</span>
-        </a>
+        </NavLink>
       </div>
       <div className="flex-none">
-        <ul className="menu menu-horizontal px-1  gap-3">
+        <ul className="menu menu-horizontal px-1  gap-2">
           <li className="font-bold">
             <NavLink
               className={({ isActive }) =>
